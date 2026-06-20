@@ -1,5 +1,6 @@
-# v6.5 更新内容
+# v6.6 更新内容
 
-修复终端空白/卡住问题: pollOnce 截断检测 + triggerCmd 先清空 output.log
-修复 T.textContent/T.innerHTML 不一致导致启动消息被覆盖
-pollOnce/writeToPipe 增加文件截断检测, 自动重置 lastLogLen
+重构终端输出架构: 所有消息统一走 output.log 单一数据源
+pollOnce 截断时替换而非追加, 消除旧内容残留
+WebUI 启动消息通过 echo 写入 output.log, 不再直接写 T.innerHTML
+修复 daemon O_TRUNC 导致终端内容混乱的问题
