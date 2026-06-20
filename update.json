@@ -1,6 +1,6 @@
 {
   "version": "v6.1",
   "versionCode": 61,
-  "zipUrl": "https://ghmod666.github.io/cf_executor_releases/cf_executor_v61.zip",
+  "zipUrl": "https://cdn.jsdelivr.net/gh/GHMOD666/cf_executor_releases@main/cf_executor_v61.zip",
   "changelog": "https://raw.githubusercontent.com/GHMOD666/cf_executor_releases/main/changelog.md"
 }
