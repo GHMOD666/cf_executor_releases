@@ -1,4 +1,4 @@
-# CF Executor v5.6 更新内容
+# CF Executor v5.7 更新内容
 
 🐛 修复远程公告不显示 (daemon popen 直连, 三重网络降级)
 ⚡ 脚本启动速度优化 (完整性校验缓存 + 200ms 轮询)
