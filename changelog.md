@@ -1,4 +1,4 @@
-# CF Executor v5.7 更新内容
+# CF Executor v5.8 更新内容
 
 🔒 安全加固: 密钥前后端分离 (daemon 签名, 前端不持有密钥)
 🔒 安全加固: 修复命令注入漏洞 (token 校验 + customPath 过滤器)
