@@ -1,7 +1,7 @@
 id=cf_executor
 name=CF Executor
-version=v6.1
-versionCode=61
+version=v6.2
+versionCode=62
 author=CF Team
 description=CF 脚本执行器 - 内核级脚本调度引擎，支持 WebUI 配置、音量键快捷启动、自定义脚本
 updateJson=https://raw.githubusercontent.com/GHMOD666/cf_executor_releases/main/update.json
