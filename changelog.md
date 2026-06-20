@@ -1,5 +1,5 @@
-# CF Executor v6.3
+# v6.5 更新内容
 
-🔧 修复 daemon 崩溃 (dprintf + _S() 不兼容 → write())
-🔧 output.log 初始化移到最前面 (防崩溃时日志丢失)
-📋 版本号 v6.3
+修复终端空白/卡住问题: pollOnce 截断检测 + triggerCmd 先清空 output.log
+修复 T.textContent/T.innerHTML 不一致导致启动消息被覆盖
+pollOnce/writeToPipe 增加文件截断检测, 自动重置 lastLogLen
