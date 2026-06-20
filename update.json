@@ -1,6 +1,6 @@
 {
   "version": "v5.7",
   "versionCode": 57,
-  "zipUrl": "https://ghmod666.github.io/cf_executor_releases/cf_executor_v57.zip",
-  "changelog": "https://ghmod666.github.io/cf_executor_releases/changelog.md"
+  "zipUrl": "https://cdn.jsdelivr.net/gh/GHMOD666/cf_executor_releases@main/cf_executor_v57.zip",
+  "changelog": "https://cdn.jsdelivr.net/gh/GHMOD666/cf_executor_releases@main/changelog.md"
 }
