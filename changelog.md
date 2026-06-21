@@ -1,4 +1,5 @@
-# v6.12 更新内容
-- 修复: pipe 文件写入改用 printf 直接写入路径, 不再依赖 base64/heredoc
-- 修复: jj_key 文件也改用 printf 直接写入, 彻底解决 shell 管道兼容性问题
-- 说明: Android toybox 的 base64 不支持 stdin pipe, heredoc 在 api.exec 单行传递中无法正常工作
+# v6.13 更新内容
+- 修复: pipe 文件写入改用 echo 替代 printf, api.exec 底层会将 % 转义导致 printf 输出空字符串
+- 修复: jj_key 文件也改用 echo 写入
+- 确认: daemon 正常运行 (v6.12 日志证实已进入 listening 状态并收到 pipe 文件)
+- 确认: 问题定位为 pipe 文件内容为空, 非 daemon 崩溃
