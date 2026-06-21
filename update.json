@@ -1,6 +1,6 @@
 {
-  "version": "v8.9",
-  "versionCode": 89,
-  "zipUrl": "https://github.com/GHMOD666/cf_executor_releases/releases/download/v8.9/cf_executor_v89.zip",
-  "changelog": "https://github.com/GHMOD666/cf_executor_releases/releases/tag/v8.9"
+  "version": "v9.0",
+  "versionCode": 90,
+  "zipUrl": "https://github.com/GHMOD666/cf_executor_releases/releases/download/v9.0/cf_executor_v90.zip",
+  "changelog": "https://github.com/GHMOD666/cf_executor_releases/releases/tag/v9.0"
 }
