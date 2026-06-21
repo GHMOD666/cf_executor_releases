@@ -1,7 +1,8 @@
-# v6.16 更新内容
-- 修复: 大退重进后密钥和自定义路径丢失 (KernelSU WebUI 清除 localStorage)
-- 修复: 初始化时 selectScript 不再清除卡密状态
-- 修复: pipe 写入检查竞态条件 (daemon 可能先于 WebUI 删除 pipe 文件)
-- 新增: 文件持久化双保险机制, 关键设置同步到 /sdcard/cf_executor/.settings
-- 新增: 30秒定时同步 localStorage 到文件, 2.5秒后从文件恢复缺失设置
-- 优化: selectScript 增加 fromInit 参数, 区分初始加载和用户操作
+# v6.17 更新内容
+- 新增: WebUI 版本更新检测, 启动时自动抓取 update.json 并与本地版本对比
+- 新增: 更新横幅 (绿色), 点击跳转下载, 可手动关闭
+- 新增: ptrace 自附着防调试 (PTRACE_TRACEME), 阻止外部调试器附加
+- 新增: /proc/self/maps 运行时哈希校验, 每30秒比较, 检测到注入立即退出
+- 新增: mprotect 反内存 dump 保护, 验证内存保护机制可用性
+- 优化: 周期性安全检测跳过 ptrace 自附着 (仅首次有效), 避免误报
+- 安全: 新增 sec:ptrace occupied 和 sec:maps changed 日志记录
