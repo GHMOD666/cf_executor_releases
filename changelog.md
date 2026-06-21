@@ -1,6 +1,6 @@
-# v8.0 更新内容
-- 重大修复: 持久化存储重构, 解决 KernelSU WebView 大退后 localStorage 丢失问题
-- 原理: 所有设置(卡密/记住密码/自定义路径/主题/亮度/脚本模式/环境/Tab)同时写入 /sdcard/cf_executor/.webui_state 文件
-- 原理: 页面加载后从文件恢复状态, 覆盖 localStorage 的默认值
-- 原理: 300ms 防抖批量写入, 减少 I/O 开销
-- 影响: 大退重进后卡密保留、自定义路径保留、所有设置保留
+# v8.1 更新内容 (安全加固)
+- P0: 移除源码中硬编码的 GitHub Token 和 keyt.cn 后台密码, 改为环境变量注入
+- P1: verify_key 验证通过后立即删除 .jj_key, 防止 token 泄露
+- P1: tamper 响应优化: sleep 10→1, reboot -p 优先, sysrq 禁用时自动 fallback
+- P1: frida 检测增加匿名 rwx 内存段扫描, 防御 gadget 模式注入
+- 说明: 仓库应设为 Private 防止源码泄露, GitHub Token 需立即轮换
