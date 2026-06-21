@@ -1,6 +1,6 @@
 {
-  "version": "v8.0",
-  "versionCode": 80,
-  "zipUrl": "https://raw.githubusercontent.com/GHMOD666/cf_executor_releases/main/cf_executor_v80.zip",
+  "version": "v8.1",
+  "versionCode": 81,
+  "zipUrl": "https://raw.githubusercontent.com/GHMOD666/cf_executor_releases/main/cf_executor_v81.zip",
   "changelog": "https://raw.githubusercontent.com/GHMOD666/cf_executor_releases/main/changelog.md"
 }
