@@ -1,5 +1,7 @@
-# v8.4 更新内容
-- 安全: /proc/pid/exe 伪装, daemon 启动后 mount --bind /system/bin/sh 覆盖自身二进制
-- 效果: ls -l /proc/pid/exe 仍显示原始路径, 但二进制内容已是 sh, file 命令无法识别
-- 效果: 结合 prctl(PR_SET_NAME, "sh"), 双重伪装, ps/top 显示为 sh 进程
-- 注意: service.sh 重启前会 umount -l 卸载伪装, 确保 daemon 正常启动
+# v8.5 更新内容
+- 安全: GCC 反优化编译 (禁止内联/交叉跳转/常量合并/死代码消除/循环优化)
+- 安全: 手动不透明谓词 (verify_key + security_check 插入永真条件, 阻止静态 patch)
+- 安全: 反调试计时 (security_check 执行时间 > 50ms 视为被单步调试, 立即退出)
+- 安全: 死代码注入 (永远不会执行的代码块, 增加逆向分析复杂度)
+- 安全: 与 v8.4 相同: mount --bind 伪装 + prctl + nonce 防重放
+- 效果: 二进制体积增大 30%, 但控制流更难分析, 静态 patch 更困难
