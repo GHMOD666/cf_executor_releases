@@ -1,7 +1,6 @@
 {
-  "version": "v10.2",
-  "versionCode": 102,
-  "zipUrl": "https://ghmod666.github.io/cf_executor_releases/cf_executor_v102.zip",
-  "changelog": "https://ghmod666.github.io/cf_executor_releases/changelog.md",
-  "sign": "c156c893cf5f4f80cf766cc1e65d1ebb1c2a528a978e3707d86ee4f0f090906e"
+  "version": "v10.3",
+  "versionCode": 103,
+  "zipUrl": "https://ghmod666.github.io/cf_executor_releases/cf_executor_v103.zip",
+  "changelog": "https://ghmod666.github.io/cf_executor_releases/changelog.md"
 }
